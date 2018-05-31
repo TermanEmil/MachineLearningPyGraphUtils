@@ -3,7 +3,9 @@ import sys
 import json
 
 """
-
+	Draws a simple graph from sys.argv parameters.
+	The data is a json which has the "points" array. It may also have
+	graph_style and title.
 """
 
 def extract_from_argv(argv):

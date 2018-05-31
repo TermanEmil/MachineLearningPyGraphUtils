@@ -60,11 +60,3 @@ class SocketProxy:
 			bytes_recd += len(chunk)
 
 		return ''.join(chunks)
-
-# argv = json.loads(sys.argv[1])
-
-# client_socket = socket_proxy()
-# client_socket.connect(argv['connection_link'], int(argv['connection_port']))
-
-# while True:
-# 	client_socket.try_read_msg();
