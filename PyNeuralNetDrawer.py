@@ -108,10 +108,14 @@ class NeuralNetDrawer:
 			arrow.set_linewidth(self.data['edge_width'])
 			self.ax.add_artist(arrow)
 
+			arrow_head_width = 0.017
+			if n1 == n2:
+				arrow_head_width = 0.04
+
 			arrow = plt.arrow(
 				n1['x'] + deltaX * 0.8, n1['y'] + deltaY * 0.8,
 				deltaX / 1000000, deltaY / 1000000,
-				head_width=0.017,
+				head_width=arrow_head_width,
 			)
 			arrow.set_color(self.get_edge_color(edge['w']))
 			arrow.set_linewidth(self.data['edge_width'])
