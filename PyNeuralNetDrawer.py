@@ -86,7 +86,7 @@ class NeuralNetDrawer:
 
 			if self.data['print_neurons_txt']:
 				txt = plt.Text(
-					neuron['x'] - radius / 4, neuron['y'] + radius * 1.1,
+					neuron['x'] - radius * 0.8, neuron['y'] + radius * 1.1,
 					label,
 					zorder=5)
 				self.ax.add_artist(txt)
